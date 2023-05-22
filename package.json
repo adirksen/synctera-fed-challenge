@@ -1,0 +1,29 @@
+{
+  "name": "synctera-fed-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild ./client/App.jsx --sourcemap --loader:.js=jsx --bundle --define:process.env.NODE_ENV='\"development\"' --outfile=public/bundle.js",
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.3",
+    "@mui/x-data-grid": "^6.3.1",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "esbuild": "^0.5.14",
+    "express": "^4.17.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^2.1.5"
+  },
+  "devDependencies": {}
+}
